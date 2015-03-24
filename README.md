@@ -1,4 +1,4 @@
-<h1>MercadoPy</h1>
+<h1>MercadoPy  (principio del desarrollo)</h1>
 Aplicación de gestión comercial para kioscos, mercados, o polirubros.
 
 <h2>Requerimientos</h2>
