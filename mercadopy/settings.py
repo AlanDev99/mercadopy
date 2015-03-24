@@ -36,6 +36,14 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'compras',
+    'contactos',
+    'control',
+    'cuadernos',
+    'productos',
+    'stock',
+    'ventas',
+    'principal',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -66,14 +74,19 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-ar'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Buenos_Aires'
 
-USE_I18N = True
+# If you set this to False, Django will make some optimizations so as not
+# to load the internationalization machinery.
+USE_I18N = False
 
+# If you set this to False, Django will not format dates, numbers and
+# calendars according to the current locale.
 USE_L10N = True
 
+# If you set this to False, Django will not use timezone-aware datetimes.
 USE_TZ = True
 
 
@@ -81,3 +94,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+                     os.path.abspath(os.path.join('static')),
+)
+
+TEMPLATE_DIRS = ( '/templates',
+                  os.path.abspath(os.path.join('templates')),
+)
